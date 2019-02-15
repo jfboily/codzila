@@ -4,6 +4,9 @@ module.exports = function(grunt) {
     pattern: ['grunt-*']
   });
 
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
+
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     config: {
@@ -73,9 +76,18 @@ module.exports = function(grunt) {
     uglify: {
       js: {
         files: {
-          'assets/<%=  config.jsTargetDir %>/script.js': ['<%=  config.jsSrcDir %>/libs/jquery-*.js', '<%=  config.jsSrcDir %>/**/*.js']
+          'assets/<%=  config.jsTargetDir %>/codzila.js': ['<%=  config.jsSrcDir %>/libs/*.js', '<%=  config.jsSrcDir %>/*.js']
         }
       }
+    },
+    concat: {
+      options: {
+        separator: ';',
+      },
+      dist: {
+        src: ['src/js/*.js', 'src/js/libs/*.js'],
+        dest: 'assets/js/codzila.js',
+      },
     },
     watch: {
       css: {
@@ -106,7 +118,7 @@ module.exports = function(grunt) {
   grunt.registerTask('build', [
     'sass:dist',
     'postcss:dist',
-    'copy:dist',
+    'copy:dev',
     'uglify'
   ]);
   grunt.registerTask('default', [
