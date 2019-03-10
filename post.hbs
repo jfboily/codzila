@@ -56,12 +56,12 @@
 
 				<div class="clear"></div>
 
-				{{#has author="count:>1"}}
+				{{!-- {{#has author="count:>1"}}
 					<aside class="post-authors">
 						<p class="post-authors-info">{{t "This post was a collaboration between:"}}</p>
 						<p class="post-authors-authors">{{authors separator=", "}}</p>
 					</aside>
-        {{else}}
+		        {{else}}
 					{{#primary_author}}
 						<aside class="post-author">
 							<figure class="post-author-avatar avatar">
@@ -90,7 +90,7 @@
 							<div class="clear"></div>
 						</aside>
 					{{/primary_author}}
-        {{/has}}
+        		{{/has}} --}}
 
 			</section>
 
@@ -100,14 +100,14 @@
 			    <div id="disqus_thread"></div>
 			</section>
 
-            {{#if @labs.subscribers}}
+            {{!-- {{#if @labs.subscribers}}
             <section class="post-subscribe">
                 {{subscribe_form placeholder=(t "Your email address") form_class="post-subscribe-form" input_class="post-subscribe-input" button_class="post-subscribe-button"}}
                 <p>{{t "Get the latest posts delivered right to your inbox."}}</p>
             </section>
-            {{/if}}
+            {{/if}} --}}
 
-			<aside class="post-nav">
+			{{!-- <aside class="post-nav">
 				{{#next_post}}
 					<a class="post-nav-next" href="{{url}}">
 						<section class="post-nav-teaser">
@@ -127,7 +127,7 @@
 					</a>
 				{{/prev_post}}
 				<div class="clear"></div>
-			</aside>
+			</aside> --}}
 
 
 		</div>
