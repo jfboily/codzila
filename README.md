@@ -13,12 +13,12 @@ Heavily based on attila by zutriken (https://github.com/zutrinken/attila).
 ## Features
 
 * Responsive layout
-* Navigation support
+* Navigation support (Sort of?)
 * Paralax cover images for posts, author archives and blog
 * Author informations for posts and author archives
 * Featured posts
-* Reading progress for posts
-* Automatic code syntax highlight and line numbers
+* Reading progress for posts (commented-out by default)
+* Automatic code syntax highlight and line numbers (using prism.js)
 * Disqus support
 * Subscribers support
 * Sharing buttons
