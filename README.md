@@ -1,7 +1,7 @@
 # Codzila
 
 A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/).
-Heavily based on codzila by zutriken (https://github.com/zutrinken/codzila).
+Heavily based on attila by zutriken (https://github.com/zutrinken/attila).
 
 ## Demo
 
