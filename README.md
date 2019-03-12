@@ -3,6 +3,8 @@
 A content focused responsive theme for [Ghost](http://github.com/tryghost/ghost/).
 Heavily based on attila by zutriken (https://github.com/zutrinken/attila).
 
+This project is still a work in progress.
+
 ## Demo
 
 
